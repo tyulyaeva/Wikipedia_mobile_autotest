@@ -17,11 +17,11 @@ public class ArticleTest extends TestBase {
     void openArticleTest() {
         step("Открыть поиск и ввести запрос", () -> {
             mainPage.clickSearchIcon();
-            searchPage.enterSearchQuery("Selenium");
+            searchPage.enterSearchQuery("Selenide");
         });
         step("Открыть первую статью", searchPage::openFirstSearchResult);
         step("Убедиться, что страница статьи открыта", () -> {
-            searchPage.shouldSeeArticleTitle("Selenium");
+            searchPage.shouldSeeArticleTitle("Selenide");
         });
     }
 
