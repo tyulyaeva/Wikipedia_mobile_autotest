@@ -2,14 +2,14 @@ package tests;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import pages.SearchMainPage;
-import pages.SearchPage1;
+import pages.MainPage;
+import pages.SearchPage;
 import static io.qameta.allure.Allure.step;
 
 public class OpeningArticleTest extends TestBase {
 
-    SearchMainPage mainPage = new SearchMainPage();
-    SearchPage1 searchPage = new SearchPage1();
+    MainPage mainPage = new MainPage();
+    SearchPage searchPage = new SearchPage();
 
     @ParameterizedTest(name = "Поиск по запросу \"{0}\" и открытие статьи")
     @CsvSource({
