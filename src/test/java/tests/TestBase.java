@@ -1,21 +1,23 @@
+
 package tests;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import drivers.BrowserstackDriver;
+//import helpers.Attach;
 import helpers.Attach;
-import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
+
     @BeforeAll
     static void beforeAll() {
         Configuration.browser = BrowserstackDriver.class.getName();
@@ -31,16 +33,13 @@ public class TestBase {
 
     @AfterEach
     void addAttachments() {
-        AndroidDriver driver = (AndroidDriver) WebDriverRunner.getWebDriver();
+        String sessionId = Selenide.sessionId().toString();
+        System.out.println(sessionId);
 
-        Attach.attachScreenshot(driver);
-        Attach.attachPageSource(driver);
-        Attach.attachLogs("Test finished on device: " +
-                driver.getCapabilities().getCapability("deviceName"));
-
-        String sessionId = ((RemoteWebDriver) driver).getSessionId().toString();
-        Attach.attachVideoLink(sessionId);
-
+        //Attach.screenshotAs("Last screenshot"); // todo fix
+        Attach.pageSource();
         closeWebDriver();
+
+        Attach.addVideo(sessionId);
     }
 }

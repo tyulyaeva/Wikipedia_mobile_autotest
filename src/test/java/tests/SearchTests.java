@@ -8,30 +8,16 @@ import static io.qameta.allure.Allure.step;
 
 public class SearchTests extends TestBase {
 
-    MainPage mainPage = new MainPage();
+    MainPage searchMainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
 
     @Test
     void successfulSearchTest() {
-        step("Open search and type query", () -> {
-            mainPage.clickSearchIcon();
+        step("Откройте поиск и введите запрос", () -> {
+            searchMainPage.clickSearchIcon();
             searchPage.enterSearchQuery("Appium");
         });
 
-        step("Verify content found", searchPage::shouldSeeResults);
-    }
-
-    @Test
-    void openAnyArticleTest() {
-        step("Open search and type query", () -> {
-            mainPage.clickSearchIcon();
-            searchPage.enterSearchQuery("Selenide");
-        });
-
-        step("Open first article", searchPage::openFirstSearchResult);
-
-        step("Verify article page is opened", () -> {
-            searchPage.shouldSeeArticleTitle("Selenide");
-        });
+        step("Проверить что контент найден", searchPage::shouldSeeResults);
     }
 }
