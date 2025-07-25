@@ -39,9 +39,9 @@ public class TestBase {
         Attach.attachLogs("Test finished on device: " +
                 driver.getCapabilities().getCapability("deviceName"));
 
-        String sessionId = ((RemoteWebDriver) driver).getSessionId().toString();
+        String sessionId = Selenide.sessionId().toString();
+        System.out.println(sessionId);
         Attach.attachVideoLink(sessionId);
-
         closeWebDriver();
     }
 }

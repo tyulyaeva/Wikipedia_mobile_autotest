@@ -21,7 +21,7 @@ public class Attach {
         return logs;
     }
 
-    @Attachment(value = "BrowserStack video", type = "text/html", fileExtension = ".html")
+    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
     public static String attachVideoLink(String sessionId) {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + Browserstack.videoUrl(sessionId)
