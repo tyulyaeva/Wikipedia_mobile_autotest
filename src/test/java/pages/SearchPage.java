@@ -13,7 +13,7 @@ import static io.appium.java_client.AppiumBy.*;
 public class SearchPage {
     private final SelenideElement searchInput = $(id("org.wikipedia.alpha:id/search_src_text"));
     private final ElementsCollection textViewResults = $$(className("android.widget.TextView"));
-    private final ElementsCollection firstSearchResult =  $$(id("org.wikipedia.alpha:id/page_list_item_title"));
+    private final ElementsCollection searchResult =  $$(id("org.wikipedia.alpha:id/page_list_item_title"));
     private final ElementsCollection articleTitle = $$(className("android.widget.TextView"));
 
     public void enterSearchQuery(String query) {
@@ -25,8 +25,8 @@ public class SearchPage {
     }
 
     public void openFirstSearchResult() {
-        firstSearchResult.first()
-                         .click();
+        searchResult.first()
+                    .click();
     }
 
     public void shouldSeeArticleTitle(String expectedTitle) {
