@@ -26,11 +26,11 @@ public class SearchPage {
 
     public void openFirstSearchResult() {
         searchResult.first()
-                    .click();
+                .click();
     }
 
     public void shouldSeeArticleTitle(String expectedTitle) {
         articleTitle.findBy(text(expectedTitle))
-                    .shouldBe(visible);
+                .shouldBe(visible);
     }
 }

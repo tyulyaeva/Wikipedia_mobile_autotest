@@ -1,5 +1,9 @@
 package tests;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
@@ -12,6 +16,9 @@ public class ArticleTest extends TestBase {
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
 
+    @Feature("Проверка открытия статьи, на  денной в результате поиска")
+    @Story("Проверка открытия статьи Википедии")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     @DisplayName("Тест-кейс №2: Проверка открытия статьи")
     void openArticleTest() {
