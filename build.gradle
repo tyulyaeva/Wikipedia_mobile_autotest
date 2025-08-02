@@ -72,3 +72,9 @@ tasks.withType(Test) {
         }
     }
 }
+
+task browserstack_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("browserstack_test")
+    }
+}
