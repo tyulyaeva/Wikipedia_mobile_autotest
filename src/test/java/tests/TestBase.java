@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import drivers.BrowserstackDriver;
+import drivers.LocalDriver;
 import helpers.AttachmentsUtils;
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -16,11 +17,18 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
+    public static String host = System.getProperty("host");
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = BrowserstackDriver.class.getName();
+        switch (host) {
+            case "browserstack_test":
+                Configuration.browser = BrowserstackDriver.class.getName();
+                break;
+            case "local_test":
+                Configuration.browser = LocalDriver.class.getName();
+                break;
+        }
         Configuration.browserSize = null;
-        Configuration.timeout = 30000;
     }
 
     @BeforeEach

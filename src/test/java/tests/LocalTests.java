@@ -17,7 +17,7 @@ public class LocalTests extends TestBase {
 
     @Feature("Проверка отображения баннера с новостями")
     @Story("Проверка отображения раздела с новостями 'In the News' на главное странице Википедии")
-    @DisplayName("Тест-кейс №3: Проверка наличия раздела 'In the News' на главной странице")
+    @DisplayName("Тест-кейс №1: Проверка наличия раздела 'In the News' на главной странице")
     @Severity(SeverityLevel.CRITICAL)
     @Test
     @Tag("local_test")
