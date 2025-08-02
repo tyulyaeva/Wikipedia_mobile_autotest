@@ -5,6 +5,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 import pages.SearchPage;
@@ -21,6 +22,7 @@ public class ArticleTest extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @Test
     @DisplayName("Тест-кейс №2: Проверка открытия статьи")
+    @Tag("browserstack_test")
     void openArticleTest() {
         step("Открыть поиск и ввести запрос", () -> {
             mainPage.clickSearchIcon();

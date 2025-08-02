@@ -36,6 +36,7 @@ dependencies {
     testImplementation (
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "org.selenide:selenide-selenoid:2.3.4",
+            "io.appium:java-client:8.3.0",
             "io.rest-assured:json-schema-validator:$restAssuredVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             'commons-io:commons-io:2.19.0',
@@ -76,5 +77,11 @@ tasks.withType(Test) {
 task browserstack_test(type: Test) {
     useJUnitPlatform {
         includeTags("browserstack_test")
+    }
+}
+
+task local_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("local_test")
     }
 }
