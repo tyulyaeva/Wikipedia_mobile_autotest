@@ -17,7 +17,11 @@ allure-results/
 *.iws
 out/
 !**/src/test/**/out/
-.idea/
+.gradle
+gradlew
+gradlew.bat
+settings.gradle
+
 
 ### Eclipse ###
 .apt_generated
