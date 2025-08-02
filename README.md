@@ -8,7 +8,7 @@
 - <a href="#tools">Технологии и инструменты</a>
 - <a href="#checking">Тестовые сценарии, реализованные в автоматизированных тест-кейсах</a>
 - <a href="#jenkins">Сборка в Jenkins</a>
-- <a href="#console">Запуск тестов (Из терминала)</a>
+- <a href="#console">Запуск тестов </a>
 - <a href="#allureReport">Allure-отчет</a>
 - <a href="#allure">Интеграция с Allure TestOps</a>
 - <a href="#jira">Интеграция с Jira</a>
