@@ -3,7 +3,7 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:local.properties"
+        "classpath:localEmulator.properties"
 })
 public interface LocalConfig extends Config {
     @Key("platformVersion")
@@ -14,4 +14,7 @@ public interface LocalConfig extends Config {
 
     @Key("deviceName")
     String getDeviceName();
+
+    @Key("localServerUrl")
+    String getServerUrl();
 }

@@ -17,18 +17,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static io.appium.java_client.remote.AutomationName.ANDROID_UIAUTOMATOR2;
-import static io.appium.java_client.remote.MobilePlatform.ANDROID;
-import static java.lang.System.getProperties;
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalDriver implements WebDriverProvider {
-    LocalConfig localConfig = ConfigFactory.create(LocalConfig.class, System.getProperties());
+    static LocalConfig localConfig = ConfigFactory.create(LocalConfig.class, System.getProperties());
 
     @Nonnull
     @Override
-
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
         UiAutomator2Options options = new UiAutomator2Options();
+        options.merge(capabilities);
         options.setAutomationName(ANDROID_UIAUTOMATOR2)
                 .setPlatformName(localConfig.getPlatformName())
                 .setPlatformVersion(localConfig.getPlatformVersion())
@@ -38,12 +36,11 @@ public class LocalDriver implements WebDriverProvider {
                 .setAppActivity("org.wikipedia.main.MainActivity");
 
         return new AndroidDriver(getAppiumServerUrl(), options);
-
     }
 
     public static URL getAppiumServerUrl() {
         try {
-            return new URL("http://localhost:4723/wd/hub");
+            return new URL(localConfig.getServerUrl());
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
