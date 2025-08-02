@@ -60,19 +60,6 @@
 
 <a id="console"></a>
 ## :rocket: Команды для запуска
-
-### Локальный запуск (через эмулятор)
-
-```bash
-gradle clean local_test -Dhost=local_test
-```
-
-> Для запуска локальных тестов требуются следующие установленные программы на компьютере: Appium Server, Appium и Android Studio
-<p align="center">  
-<img title="AppiumService" src="media/screens/appium_server.png" width="1000">  
-</p> 
-Пример запуска Appium сервера, с созданием локального порта.
-
 ### Удаленный запуск (через browserstack)
 
 ```bash
