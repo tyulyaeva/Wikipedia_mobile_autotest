@@ -19,21 +19,84 @@
 <a id="tools"></a>
 
 ## 🔨 Технологии и инструменты:
-
-| Java                                                                                                    | IntelliJ  <br>  Idea                                                                                               | GitHub                                                                                                     | JUnit 5                                                                                                          | Gradle                                                                                                    | Allure <br> Report                                                                                                        | Appium                                                                                                   | Browserstack                                                                                                                   | Jenkins                                                                                                         | Jira                                                                                                                                  | Telegram                                                                                                         |                                                                                            Allure <br> TestOps |
-|:--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------:|
-| <a href="https://www.java.com/"><img src="media/logo/Java.svg" width="50" height="50"  alt="Java"/></a> | <a href="https://www.jetbrains.com/idea/"><img src="media/logo/Idea.svg" width="50" height="50"  alt="IDEA"/></a> | <a href="https://github.com/"><img src="media/logo/GitHub.svg" width="50" height="50"  alt="Github"/></a> | <a href="https://junit.org/junit5/"><img src="media/logo/Junit5.svg" width="50" height="50"  alt="JUnit 5"/></a> | <a href="https://gradle.org/"><img src="media/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>  | <a href="https://github.com/allure-framework"><img src="media/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a> | <a href="https://appium.io//"><img src="media/logo/Appium.svg" width="50" height="50" alt="Appium"/></a> | <a href="https://www.browserstack.com/"><img src="media/logo/Browserstack.svg" width="50" height="50" alt="Browserstack"/></a> | <a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a> | <a href="https://www.atlassian.com/software/jira/"><img src="media/logo/Jira.svg" width="50" height="50" alt="Jira" title="Jira"/></a> | <a href="https://web.telegram.org/"><img src="media/logo/Telegram.svg" width="50" height="50" alt="Telegram"/></a> | <a href="https://qameta.io/"><img src="media/logo/Allure_TO.svg" width="50" height="50" alt="Allure_TO"/></a> |
-
 <a id="checking"></a>
+
+<table>
+  <tr>
+    <th><a href="https://www.oracle.com/java/" target="_blank">Java</a></th>
+    <th><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a></th>
+    <th><a href="https://github.com/" target="_blank">GitHub</a></th>
+    <th><a href="https://junit.org/junit5/" target="_blank">JUnit 5</a></th>
+    <th><a href="https://gradle.org/" target="_blank">Gradle</a></th>
+    <th><a href="https://qameta.io/" target="_blank">Allure</a></th>
+    <th><a href="https://qameta.io/" target="_blank">Jira</a></th>
+    <th><a href="https://docs.qameta.io/allure/" target="_blank">Allure Report</a></th>
+    <th><a href="https://www.jenkins.io/" target="_blank">Jenkins</a></th>
+    <th><a href="https://telegram.org/" target="_blank">Telegram</a></th>
+    <th><a href="https://www.browserstack.com/" target="_blank">Browserstack</a></th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.oracle.com/java/" target="_blank">
+        <img src="media/logo/Java.svg" width="50" height="50" alt="Java"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.jetbrains.com/idea/" target="_blank">
+        <img src="media/logo/Idea.svg" width="50" height="50" alt="IDEA"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/" target="_blank">
+        <img src="media/logo/GitHub.svg" width="50" height="50" alt="GitHub"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://junit.org/junit5/" target="_blank">
+        <img src="media/logo/Junit5.svg" width="50" height="50" alt="JUnit 5"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://gradle.org/" target="_blank">
+        <img src="media/logo/Gradle.svg" width="50" height="50" alt="Gradle"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://qameta.io/" target="_blank">
+        <img src="media/logo/Allure_TO.svg" width="50" height="50" alt="Allure"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.atlassian.com/software/jira/" target="_blank">
+        <img src="media/logo/Jira.svg" width="50" height="50" alt="Jira"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://docs.qameta.io/allure/" target="_blank">
+        <img src="media/logo/Allure.svg" width="50" height="50" alt="Allure"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.jenkins.io/" target="_blank">
+        <img src="media/logo/Jenkins.svg" width="50" height="50" alt="Jenkins"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://telegram.org/" target="_blank">
+        <img src="media/logo/Telegram.svg" width="50" height="50" alt="Telegram"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.browserstack.com/" target="_blank">
+        <img src="media/logo/Browserstack.svg" width="50" height="50" alt="Telegram"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## :clipboard: Тестовые сценарии
-
-### Для локального запуска
-- Тест-кейс №1: Проверка наличия раздела 'In the News' на главной странице
-
-### Для удаленного запуска
 - Тест-кейс №1: Проверка получения результата поиска
 - Тест-кейс №2: Проверка открытия статьи
 - Тест-кейс №3: Проверка наличия раздела 'In the News' на главной странице
@@ -44,7 +107,7 @@
 - Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), c применением паттерна Page Object.
 - Сборщик - <code>Gradle</code>.
 - <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
-- При прогоне тестов для запуска используется [Android Studio](https://developer.android.com/), [Browserstack](https://www.browserstack.com/), драйвер Appium.
+- При прогоне тестов для запуска используется [Browserstack](https://www.browserstack.com/).
 - В отчетах Allure для каждого теста (запускаемого удаленно) прикреплено видео прохождения теста.
 
 ---
@@ -124,9 +187,6 @@ gradle clean browserstack_test -Dhost=browserstack_test
 
 <a id="teleg"></a>
 ## <img src="media/logo/Telegram.svg" width="25" height="25"/> Уведомления в Telegram чат с ботом
-
-### Уведомление через чат бот
-
 <p align="center">
 <img src="media/screens/tlg_bot.png" alt="Telegram" width="400" height="800">
 </p>
