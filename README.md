@@ -53,7 +53,7 @@
 ## <img src="media/logo/Jenkins.svg" width="25" height="25"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Wikipedia_mobile_autotest/)
 
 <p align="center">
-<img src="media/screens/jenkins_main.png" alt="Jenkins Page" width="1000" height="350">
+<img src="media/screens/jenkins_main.png" alt="Jenkins Page" width="1000" height="500">
 </p>
 
 ---
@@ -69,7 +69,7 @@ gradle clean local_test -Dhost=local_test
 
 > Для запуска локальных тестов требуются следующие установленные программы на компьютере: Appium Server, Appium и Android Studio
 <p align="center">  
-<img title="AppiumService" src="media/screens/appium_server.png" width="850">  
+<img title="AppiumService" src="media/screens/appium_server.png" width="1000">  
 </p> 
 Пример запуска Appium сервера, с созданием локального порта.
 
@@ -87,13 +87,13 @@ gradle clean browserstack_test -Dhost=browserstack_test
 ## 🖨️ Основная страница отчёта
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screens/allure_main.png" width="850">  
+<img title="Allure Overview Dashboard" src="media/screens/allure_main.png" width="1000">  
 </p>  
 
 ## 📄 Тест-кейсы
 
 <p align="center">  
-<img title="Allure Tests" src="media/screens/allure_suits.png" width="850">   
+<img title="Allure Tests" src="media/screens/allure_suits.png" width="1000">   
 </p>
 
 ---
@@ -104,7 +104,7 @@ gradle clean browserstack_test -Dhost=browserstack_test
 ## 🖨️ Основная страница отчёта
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="media/screens/allure_to_boards.png" width="850">  
+<img title="Allure TestOps Dashboard" src="media/screens/allure_to_boards.png" width="1000">  
 </p>  
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
 
@@ -112,7 +112,7 @@ gradle clean browserstack_test -Dhost=browserstack_test
 ## 📄 Авто тест-кейсы
 
 <p align="center">  
-<img title="Allure Tests" src="media/screens/allure_to_manual.png" width="850">  
+<img title="Allure Tests" src="media/screens/allure_to_manual.png" width="1000">  
 </p>
 
 ---
@@ -141,7 +141,7 @@ gradle clean browserstack_test -Dhost=browserstack_test
 ### Уведомление через чат бот
 
 <p align="center">
-<img src="media/screens/tlg_bot.png" alt="Telegram" width="500" height="800">
+<img src="media/screens/tlg_bot.png" alt="Telegram" width="400" height="800">
 </p>
 
 
